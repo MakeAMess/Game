@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 237885944}
   - component: {fileID: 237885943}
   - component: {fileID: 237885942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 64
   cameraTransform: {fileID: 861147532}
 --- !u!1001 &1467584460198327248
 PrefabInstance:

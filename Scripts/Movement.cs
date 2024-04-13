@@ -20,9 +20,14 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
+        grounded = Physics.Raycast(transform.position, Vector3.down, 1.01f, groundLayer);
+
         Move(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
+
+        if (Input.GetButtonDown("Jump"))
+            Jump();
     }
 
     public void Move(Vector2 movement)
@@ -35,5 +40,11 @@ public class Movement : MonoBehaviour
             //handles rotation
             transform.Rotate(Vector3.up * movement.x * rotationSpeed * Time.deltaTime);
         }
+    }
+
+    public void Jump()
+    {
+        if (grounded == true)
+            rb.velocity = new Vector3(rb.velocity.x, 3, rb.velocity.z);
     }
 }
