@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -32,7 +31,7 @@ public class Movement : MonoBehaviour
     {
         {
             //Walking forward and backwards
-            Vector3 moveVector = transform.forward * movement.y * speed * Time.deltaTime;
+            Vector3 moveVector = transform.forward * (movement.y * speed * Time.deltaTime);
             rb.MovePosition(rb.position + moveVector);
 
             //handles rotation
