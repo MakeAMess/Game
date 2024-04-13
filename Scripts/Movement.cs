@@ -7,13 +7,11 @@ public class Movement : MonoBehaviour
     private Rigidbody rb;
 
     private float speed = 2;
-    private int rotationSpeed = 240;
 
     private bool grounded;
     [SerializeField] LayerMask groundLayer;
 
     [SerializeField] Transform cameraTransform;
-
 
     private void Awake()
     {
@@ -38,7 +36,8 @@ public class Movement : MonoBehaviour
             rb.MovePosition(rb.position + moveVector);
 
             //handles rotation
-            transform.Rotate(Vector3.up * movement.x * rotationSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(cameraTransform.forward), Time.deltaTime);
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
         }
     }
 
