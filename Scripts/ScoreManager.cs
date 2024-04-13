@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-namespace a;
-
 public class ScoreManager: IScoreManager {
 
     [SerializeField]

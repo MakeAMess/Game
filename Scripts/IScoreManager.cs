@@ -1,6 +1,4 @@
-﻿namespace a;
-
-public interface IScoreManager {
+﻿public interface IScoreManager {
     float GetScore();
     float SetScore(float score);
     float AddScore(float score);
