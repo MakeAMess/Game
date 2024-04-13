@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4138934245370302417}
   - component: {fileID: 9190230112870701905}
   - component: {fileID: 4295659986723749594}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fride_door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 6784051692930387667}
   - component: {fileID: 44047530588339164}
   - component: {fileID: 1584775774717702929}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fride_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7967515948904292963}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}

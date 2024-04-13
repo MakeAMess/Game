@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4977939171860159881}
   - component: {fileID: 7327770846552537786}
   - component: {fileID: 3191333227754906364}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 2161179316399802872}
   - component: {fileID: 6324983261126760050}
   - component: {fileID: 2610413762819584330}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plate_cell.004 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 4396787226590804658}
   - component: {fileID: 5487234629484735929}
   - component: {fileID: 3458825938607596933}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plate_cell.002 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 1138997037356357569}
   - component: {fileID: 4566967824752611168}
   - component: {fileID: 6093324025335097253}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plate_cell (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7639515237206763773}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shatter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 3645993338026300116}
   - component: {fileID: 3457919346008495900}
   - component: {fileID: 8356288687470036433}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +650,7 @@ GameObject:
   - component: {fileID: 4812297284421547114}
   - component: {fileID: 3322457607808968689}
   - component: {fileID: 5892876971811093652}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plate_cell.003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +784,7 @@ GameObject:
   - component: {fileID: 7593997073688662032}
   - component: {fileID: 8945647398187664160}
   - component: {fileID: 7903552904691192776}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plate_cell.001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
