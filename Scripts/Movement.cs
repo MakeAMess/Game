@@ -6,9 +6,7 @@ public class Movement : MonoBehaviour
 {
     private Rigidbody rb;
 
-
     private float speed = 5;
-    private float rotationSpeed = 2;
     private float jumpHeight = 6;
 
     private bool grounded;
