@@ -35,6 +35,7 @@ public class Movement : MonoBehaviour
         {
             Vector3 firstMoveVector = transform.forward * (movement.y * speed * Time.deltaTime);
             Vector3 secondMoveVector = transform.right * (movement.x * speed * Time.deltaTime);
+
             Vector3 moveVector = firstMoveVector + secondMoveVector;
             rb.MovePosition(rb.position + moveVector);
 
