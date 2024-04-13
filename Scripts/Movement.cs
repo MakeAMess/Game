@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
 
 
     private float speed = 5;
-    private float rotationSpeed = 20;
+    private float rotationSpeed = 2;
     private float jumpHeight = 6;
 
     private bool grounded;
