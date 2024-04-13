@@ -5,7 +5,9 @@ public class Movement : MonoBehaviour
 {
     private Rigidbody rb;
 
-    private float speed = 2;
+    private float speed = 5;
+    private float rotationSpeed = 20;
+    private float jumpHeight = 6;
 
     private bool grounded;
     [SerializeField] LayerMask groundLayer;
@@ -15,6 +17,7 @@ public class Movement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
@@ -30,12 +33,11 @@ public class Movement : MonoBehaviour
     public void Move(Vector2 movement)
     {
         {
-            //Walking forward and backwards
-            Vector3 moveVector = transform.forward * (movement.y * speed * Time.deltaTime);
+
             rb.MovePosition(rb.position + moveVector);
 
             //handles rotation
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(cameraTransform.forward), Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(cameraTransform.forward), Time.deltaTime * rotationSpeed);
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
         }
     }
@@ -43,6 +45,6 @@ public class Movement : MonoBehaviour
     public void Jump()
     {
         if (grounded == true)
-            rb.velocity = new Vector3(rb.velocity.x, 3, rb.velocity.z);
+            rb.velocity = new Vector3(rb.velocity.x, jumpHeight, rb.velocity.z);
     }
 }
