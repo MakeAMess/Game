@@ -7,26 +7,25 @@ public class CameraControll : MonoBehaviour
     private float rotationspeed = 300;
     [SerializeField]
     private Transform player;
+    [SerializeField] Vector3 offset = new Vector3(0,1,0);
 
     public float Ysensitivity;
     private float rotationY = 0f;
 
     private void Update()
     {
-        transform.position = player.transform.position;
+        transform.position = player.transform.position + offset;
 
         if (Input.GetAxis("Mouse Y") != 0 || Input.GetAxis("Mouse X") != 0)
         {
-            //float verticalInput = Input.GetAxis("Mouse Y") * rotationspeed * Time.deltaTime;
             float horizontalInput = Input.GetAxis("Mouse X") * rotationspeed * Time.deltaTime;
-            //transform.Rotate(Vector3.right, verticalInput);
             transform.Rotate(Vector3.up, horizontalInput);
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
+            transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 0);
 
             rotationY += Input.GetAxis("Mouse Y") * Ysensitivity;
 
 
-            rotationY = Mathf.Clamp(rotationY, -15, 15);
+            rotationY = Mathf.Clamp(rotationY, -30, 30);
             transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, transform.localEulerAngles.z);
         }
     }
