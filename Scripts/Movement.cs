@@ -42,7 +42,7 @@ public class Movement : MonoBehaviour
 
             //handles rotation
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(cameraTransform.forward), Time.deltaTime * rotationSpeed);
-            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+            transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
         }
     }
 
