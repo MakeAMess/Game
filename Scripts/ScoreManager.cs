@@ -1,8 +1,8 @@
 ﻿namespace a;
 
 public class ScoreManager : IScoreManager {
+    [SerializeField]
     private float score = 0;
-    
     
     override public float GetScore() {
         return this.score;
