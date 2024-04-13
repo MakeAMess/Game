@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Explosive : MonoBehaviour, Interactable
+public class Explosive : Interactable
 {
     public GameObject point;
     public float force = 500;
     public float radius = 2;
 
-    public void Interact()
+    public override void Interact(Vector3 point)
     {
         Explode();
     }
