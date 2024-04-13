@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -6,7 +8,7 @@ public class Movement : MonoBehaviour
 
 
     private float speed = 5;
-    private float rotationSpeed = 20;
+    private float rotationSpeed = 2;
     private float jumpHeight = 6;
 
     private bool grounded;
@@ -33,9 +35,8 @@ public class Movement : MonoBehaviour
     public void Move(Vector2 movement)
     {
         {
-            Vector3 firstMoveVector = transform.forward * (movement.y * speed * Time.deltaTime);
-            Vector3 secondMoveVector = transform.right * (movement.x * speed * Time.deltaTime);
-
+            Vector3 firstMoveVector = transform.forward * movement.y * speed * Time.deltaTime;
+            Vector3 secondMoveVector = transform.right * movement.x * speed * Time.deltaTime;
             Vector3 moveVector = firstMoveVector + secondMoveVector;
             rb.MovePosition(rb.position + moveVector);
 
