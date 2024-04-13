@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
-public interface Interactable
+public abstract class Interactable : MonoBehaviour
 {
-    public void Interact();
+    public abstract void Interact(Vector3 position);
 }
 

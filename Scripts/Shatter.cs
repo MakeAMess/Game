@@ -2,25 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShatterdWall : MonoBehaviour, Interactable
+public class Shatter : Interactable
 {
     public GameObject shattered;
-    public GameObject intactWall;
-    public GameObject testPoint;
+    public GameObject intact;
 
-    public void Interact()
+    public float force = 500;
+    public float radius = 2;
+
+    public override void Interact(Vector3 point)
     {
-        ShatterWall(testPoint.transform.position);
+        ShatterWall(point);
     }
 
     public void ShatterWall(Vector3 point)
     {
-        intactWall.SetActive(false);
+        intact.SetActive(false);
         shattered.SetActive(true);
 
         foreach (Rigidbody rb in shattered.GetComponentsInChildren<Rigidbody>())
         {
-            rb.AddExplosionForce(800, point, 4);
+            rb.AddExplosionForce(force, point, radius);
         }
     }
 }
