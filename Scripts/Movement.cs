@@ -35,14 +35,10 @@ public class Movement : MonoBehaviour
     public void Move(Vector2 movement)
     {
         {
-            Vector3 firstMoveVector = transform.forward * movement.y * speed * Time.deltaTime;
-            Vector3 secondMoveVector = transform.right * movement.x * speed * Time.deltaTime;
+            Vector3 firstMoveVector = cameraTransform.forward * movement.y * speed * Time.deltaTime;
+            Vector3 secondMoveVector = cameraTransform.right * movement.x * speed * Time.deltaTime;
             Vector3 moveVector = firstMoveVector + secondMoveVector;
             rb.MovePosition(rb.position + moveVector);
-
-            //handles rotation
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(cameraTransform.forward), Time.deltaTime * rotationSpeed);
-            transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
         }
     }
 
