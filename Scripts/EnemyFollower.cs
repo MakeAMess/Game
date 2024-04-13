@@ -5,14 +5,9 @@ public class EnemyFollower : MonoBehaviour
 {
     private NavMeshAgent _agent;
     private Transform _playerTransform;
-    private readonly float _fieldOfView = 60f; // Field of view in degrees
-    private readonly Vector3[] _path; // The path the enemy should follow
+    private float _fieldOfView = 60f; // Field of view in degrees
+    private Vector3[] _path; // The path the enemy should follow
     private int _currentPathIndex;
-
-    public EnemyFollower(Vector3[] path)
-    {
-        _path = path;
-    }
 
     private void Start()
     {
