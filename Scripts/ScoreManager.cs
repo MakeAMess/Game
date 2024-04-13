@@ -1,7 +1,7 @@
 ﻿namespace a;
 
 public class ScoreManager : IScoreManager {
-    float score = 0;
+    private float score = 0;
     
     
     override public float GetScore() {
