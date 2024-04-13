@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7960065164086229727}
   - component: {fileID: 5104595928675827440}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7011328579607567441}
   - component: {fileID: 708337723808485121}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 8107241014530969509}
   - component: {fileID: 7730375881516733476}
   - component: {fileID: 5462648741943402861}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Oven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 535233273327829082}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
