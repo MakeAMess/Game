@@ -1,17 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-namespace DefaultNamespace
+public class EnemyFollower
 {
-    public class EnemyFollower
+    private NavMeshAgent _agent;
+    private Transform Movement;
+        
+        
+    void FixedUpdate()
     {
-        private NavMeshAgent _agent;
-        private Transform Movement;
-        
-        
-        void FixedUpdate()
-        {
-            _agent.SetDestination(Movement.position);
-        }
+        _agent.SetDestination(Movement.position);
     }
 }
