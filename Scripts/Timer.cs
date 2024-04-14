@@ -3,15 +3,15 @@
 public class Timer : MonoBehaviour {
     private bool _hasKey = false;
     private bool _hasExited = false;
-    private float _timer = 0f; //in seconds
+    public static float timer = 0f; //in seconds
 
     private void Update() {
         if (!_hasExited) {
-            _timer += Time.deltaTime;
+            timer += Time.deltaTime;
         }
 
         if (_hasKey && _hasExited) {
-            print("You completed the game in " + _timer * 60 + " Minutes!");
+            print("You completed the game in " + timer * 60 + " Minutes!");
         }
     }
 
