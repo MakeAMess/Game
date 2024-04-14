@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6355028131876277692}
   - component: {fileID: 5437379840660201712}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 6428070376589090004}
   - component: {fileID: 6338166129845600977}
   - component: {fileID: 7613076468030590506}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 946658248290154909}
   - component: {fileID: 7503588113720949440}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 5433953456881761814}
   - component: {fileID: 538264736000822254}
   - component: {fileID: 8153138511958807995}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 7047127110863186281}
   - component: {fileID: 8753631672769212096}
   - component: {fileID: 3183083418958232652}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8054870055682496209}
   - component: {fileID: 5538427954710304147}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lamp_Large
   m_TagString: Untagged
   m_Icon: {fileID: 0}

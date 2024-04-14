@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3761582778467185140}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5186075490019070386}
   - component: {fileID: 2017848567611410524}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BookPile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

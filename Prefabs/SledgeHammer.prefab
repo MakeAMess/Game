@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7295080157521459285}
   - component: {fileID: 8742306150924276567}
   - component: {fileID: 3213626964847251172}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SledgeHammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
