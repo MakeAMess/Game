@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        grounded = Physics.Raycast(transform.position, Vector3.down, 1.01f, groundLayer);
+        grounded = Physics.Raycast(transform.position, Vector3.down, 1.26f, groundLayer);
 
         Move(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
 
