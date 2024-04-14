@@ -26,7 +26,7 @@ public class PlayerInteract : MonoBehaviour
             }
 
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, 2.5f, LayerMask.GetMask("Interactable")))
+            if (Physics.Raycast(transform.position, transform.forward, out hit, 3f, LayerMask.GetMask("Interactable")))
             {
                 Interactable interactable = hit.rigidbody.GetComponentInParent<Interactable>();
                 if (interactable != null)
@@ -39,7 +39,7 @@ public class PlayerInteract : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, 2.5f, LayerMask.GetMask("Interactable")))
+            if (Physics.Raycast(transform.position, transform.forward, out hit, 3f, LayerMask.GetMask("Interactable")))
             {
                 if (!pickup)
                 {
