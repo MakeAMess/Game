@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e712d2c304a5b646a84578132bf6d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: 200
   point: {fileID: 4311612448734457427}
   force: 500
   radius: 2

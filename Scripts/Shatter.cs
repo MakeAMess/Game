@@ -12,6 +12,7 @@ public class Shatter : Interactable
 
     public override void Interact(Vector3 point)
     {
+        base.Interact(point);
         ShatterWall(point);
     }
 
