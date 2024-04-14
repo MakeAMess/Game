@@ -93,7 +93,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: {fileID: 7327770846552537786}
-  magnitude: 1
+  magnitude: 4
+  objectName: 
 --- !u!1 &2514631720608251768
 GameObject:
   m_ObjectHideFlags: 0

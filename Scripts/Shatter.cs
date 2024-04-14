@@ -10,8 +10,13 @@ public class Shatter : Interactable
     public float force = 500;
     public float radius = 2;
 
+    private bool done;
+
     public override void Interact(Vector3 point)
     {
+        if (done) return;
+        done = true;
+
         base.Interact(point);
         ShatterWall(point);
     }
