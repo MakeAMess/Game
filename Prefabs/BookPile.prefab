@@ -86,7 +86,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 200
   point: {fileID: 4311612448734457427}
-  force: 500
+  force: 10
   radius: 2
 --- !u!1001 &2697266918686611128
 PrefabInstance:
