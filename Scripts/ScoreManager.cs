@@ -1,9 +1,19 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
-public class ScoreManager: IScoreManager {
+public class ScoreManager : MonoBehaviour, IScoreManager {
 
     [SerializeField]
     private float _score = 0;
+
+    public TMP_Text pointsText;
+
+    public static ScoreManager Instance;
+
+    private void Start()
+    {
+        Instance = this;
+    }
 
     public float GetScore() {
         return this._score;
@@ -14,7 +24,9 @@ public class ScoreManager: IScoreManager {
     }
 
     public float AddScore(float score) {
-        return this._score += score;
+        this._score += score;
+        pointsText.text = _score.ToString();
+        return _score;
     }
 
     public float SubtractScore(float score) {
@@ -22,6 +34,8 @@ public class ScoreManager: IScoreManager {
     }
 
     public float ResetScore() {
-        return this._score = 0;
+        this._score = 0;
+        pointsText.text = _score.ToString();
+        return _score;
     }
 }

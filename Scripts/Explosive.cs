@@ -12,6 +12,7 @@ public class Explosive : Interactable
 
     public override void Interact(Vector3 point)
     {
+        base.Interact(point);
         if (done) return;
         done = true;
         Explode();

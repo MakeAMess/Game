@@ -8,21 +8,20 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] Transform handPos;
     [SerializeField] float throwForce;
 
-    Rigidbody rigidbody = null;
-    Collider collider = null;
+    Pickup pickup = null;
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (rigidbody)
+            if (pickup)
             {
-                rigidbody.isKinematic = false;
-                collider.enabled = true;
+                pickup.rb.isKinematic = false;
+                pickup.colliders.ForEach(c => c.enabled = true);
 
-                rigidbody.AddForce(transform.forward * throwForce, ForceMode.Impulse);
-                rigidbody = null;
+                pickup.Throw(transform.forward);
 
+                pickup = null;
                 return;
             }
 
@@ -42,24 +41,22 @@ public class PlayerInteract : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(transform.position, transform.forward, out hit, 2.5f, LayerMask.GetMask("Interactable")))
             {
-                if (!rigidbody)
+                if (!pickup)
                 {
-                    if (hit.rigidbody.mass > 5)
+                    pickup = hit.rigidbody.GetComponentInParent<Pickup>();
+                    if (!pickup)
                         return;
 
-                    rigidbody = hit.rigidbody;
-                    collider = hit.collider;
-
-                    rigidbody.isKinematic = true;
-                    collider.enabled = false;
+                    pickup.rb.isKinematic = true;
+                    pickup.colliders.ForEach(c => c.enabled = false);
                 }
             }
         }
 
-        if (rigidbody)
+        if (pickup)
         {
-            rigidbody.position = handPos.position;
-            rigidbody.rotation = handPos.rotation;
+            pickup.transform.position = handPos.position;
+            pickup.transform.rotation = handPos.rotation;
         }
     }
 }
