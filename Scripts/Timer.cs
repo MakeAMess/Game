@@ -5,6 +5,13 @@ public class Timer : MonoBehaviour {
     private bool _hasExited = false;
     public static float timer = 0f; //in seconds
 
+    public static Timer Instance;
+
+    private void Start()
+    {
+        Instance = this;
+    }
+
     private void Update() {
         if (!_hasExited) {
             timer += Time.deltaTime;
