@@ -29,6 +29,8 @@ public class Timer : MonoBehaviour {
     public void PlayerExited() {
         if (_hasKey) {
             _hasExited = true;
+            SceneChanger.score = ScoreManager.Instance.GetScore();
+            SceneChanger.ChangeScene(2);
         }
     }
 }

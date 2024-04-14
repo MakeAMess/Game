@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraControll : MonoBehaviour
 {
-    private float rotationspeed = 300;
+    private float rotationspeed = 1;
     [SerializeField]
     private Transform player;
     [SerializeField] Vector3 offset = new Vector3(0,1,0);
@@ -18,7 +18,7 @@ public class CameraControll : MonoBehaviour
 
         if (Input.GetAxis("Mouse Y") != 0 || Input.GetAxis("Mouse X") != 0)
         {
-            float horizontalInput = Input.GetAxis("Mouse X") * rotationspeed * Time.deltaTime;
+            float horizontalInput = Input.GetAxis("Mouse X") * rotationspeed;
             transform.Rotate(Vector3.up, horizontalInput);
             transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 0);
 

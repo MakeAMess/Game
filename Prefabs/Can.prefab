@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1546731609392702019}
   - component: {fileID: 2978627407062721693}
   - component: {fileID: 3842262499575214010}
+  - component: {fileID: -2663342233409772768}
   m_Layer: 0
   m_Name: Can
   m_TagString: Untagged
@@ -101,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f90000e46b4b5b439e49580a3dfdc31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionSound: {fileID: 3842262499575214010}
 --- !u!64 &1546731609392702019
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -247,3 +247,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-2663342233409772768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105974769291286987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e62d31e1aa33764da1ebb8777e8fa13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionSound: {fileID: 3842262499575214010}
+  points: 5
+  magnetude: 5
