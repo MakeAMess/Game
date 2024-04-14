@@ -80,7 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 500
   point: {fileID: 8016046494555662530}
-  force: 200
+  force: 50
   radius: 2
 --- !u!1 &8016046494555662530
 GameObject:
