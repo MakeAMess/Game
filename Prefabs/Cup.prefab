@@ -883,7 +883,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: {fileID: 8615625704366370254}
-  magnitude: 1
+  magnitude: 4
+  objectName: 
 --- !u!114 &8615625704366370254
 MonoBehaviour:
   m_ObjectHideFlags: 0
