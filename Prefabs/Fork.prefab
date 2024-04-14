@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionSound: {fileID: 4529865082264525566}
+  points: 5
 --- !u!82 &4529865082264525566
 AudioSource:
   m_ObjectHideFlags: 0
