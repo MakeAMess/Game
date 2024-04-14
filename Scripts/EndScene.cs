@@ -19,6 +19,8 @@ public class EndScene : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneChanger.ChangeScene(0);
+            Cursor.lockState = CursorLockMode.None;
+            Timer.Instance.Reset();
         }
     }
 }

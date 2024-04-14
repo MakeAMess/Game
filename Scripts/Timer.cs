@@ -22,6 +22,13 @@ public class Timer : MonoBehaviour {
         }
     }
 
+    public void Reset()
+    {
+        _hasKey = false;
+        _hasExited = false;
+        timer = 0f;
+    }
+
     public void PlayerFoundKey() {
         _hasKey = true;
     }
